@@ -2,7 +2,7 @@
 # https://github.com/autowarefoundation/sync-file-templates
 # To make changes, update the source repository and follow the guidelines in its README.
 
-name: sync-files
+name: update-codeowners-from-packages
 
 on:
   schedule:
@@ -15,7 +15,7 @@ jobs:
     secrets:
       secret: ${{ secrets.APP_ID }}
 
-  sync-files:
+  update-codeowners-from-packages:
     needs: check-secret
     if: ${{ needs.check-secret.outputs.set == 'true' }}
     runs-on: ubuntu-22.04
@@ -27,11 +27,11 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
 
-      - name: Run sync-files
-        uses: autowarefoundation/autoware-github-actions/sync-files@v1
+      - name: Run update-codeowners-from-packages
+        uses: autowarefoundation/autoware-github-actions/update-codeowners-from-packages@v1
         with:
           token: ${{ steps.generate-token.outputs.token }}
           pr-labels: |
             tag:bot
-            tag:sync-files
+            tag:update-codeowners-from-packages
           auto-merge-method: squash
