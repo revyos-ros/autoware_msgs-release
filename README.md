@@ -1,3 +1,37 @@
+## autoware_msgs (jazzy) - 1.8.0-1
+
+The packages in the `autoware_msgs` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r jazzy autoware_msgs --override-release-repository-push-url git@github.com:revyos-ros/autoware_msgs-release.git` on `Tue, 10 Jun 2025 18:19:11 -0000`
+
+These packages were released:
+- `autoware_common_msgs`
+- `autoware_control_msgs`
+- `autoware_localization_msgs`
+- `autoware_map_msgs`
+- `autoware_msgs`
+- `autoware_perception_msgs`
+- `autoware_planning_msgs`
+- `autoware_sensing_msgs`
+- `autoware_system_msgs`
+- `autoware_v2x_msgs`
+- `autoware_vehicle_msgs`
+
+Version of package(s) in repository `autoware_msgs`:
+
+- upstream repository: https://github.com/autowarefoundation/autoware_msgs.git
+- release repository: https://github.com/revyos-ros/autoware_msgs-release.git
+- rosdistro version: `1.8.0-1`
+- old version: `1.3.0-1`
+- new version: `1.8.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## autoware_msgs (jazzy) - 1.3.0-1
 
 The packages in the `autoware_msgs` repository were released into the `jazzy` distro by running `/tmp/venv/bin/bloom-release -r jazzy autoware_msgs --override-release-repository-push-url git@github.com:revyos-ros/autoware_msgs-release.git` on `Sun, 15 Dec 2024 09:44:55 -0000`
